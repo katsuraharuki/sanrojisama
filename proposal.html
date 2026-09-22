@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>公式予約を、いちばん強い販売チャネルに｜小天狗さんろじ様 ご提案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sumi:#161614;
+  --ink:#26261f;
+  --ink-soft:#4e4c45;
+  --ink-pale:#84817a;
+  --kin:#b8985a;
+  --kin-deep:#8d6f39;
+  --washi:#f8f6f1;
+  --rule:#ddd8cc;
+  --midori:#35703f;
+  --serif:"Shippori Mincho B1",serif;
+  --sans:"Noto Sans JP",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:var(--serif);
+  color:var(--ink);
+  background:#e9e6df;
+  line-height:2.05;
+  font-size:14.5px;
+  -webkit-font-smoothing:antialiased;
+}
+.sheet{
+  width:min(860px,100%);
+  margin:0 auto;
+  background:#fff;
+  padding:clamp(40px,6vw,86px) clamp(26px,6vw,80px);
+}
+.num{font-feature-settings:"lnum" 1;font-variant-numeric:lining-nums}
+
+/* ---------- cover ---------- */
+.cover{
+  background:var(--sumi);
+  color:#fff;
+  padding:clamp(56px,10vw,110px) clamp(26px,6vw,80px) clamp(48px,8vw,90px);
+  position:relative;
+  overflow:hidden;
+}
+.cover::after{
+  content:"";position:absolute;right:-90px;top:-90px;
+  width:320px;height:320px;border:1px solid rgba(184,152,90,.28);
+  border-radius:50%;
+}
+.cover-to{
+  font-size:13px;letter-spacing:.3em;color:var(--kin);
+  padding-bottom:16px;border-bottom:1px solid rgba(184,152,90,.4);
+  display:inline-block;margin-bottom:clamp(40px,7vw,72px);
+}
+.cover h1{
+  font-size:clamp(25px,4.4vw,42px);
+  font-weight:500;line-height:1.68;letter-spacing:.04em;
+  position:relative;z-index:2;
+}
+.cover h1 span{color:var(--kin)}
+.cover-sub{
+  margin-top:26px;font-size:clamp(14px,1.8vw,17px);
+  color:rgba(255,255,255,.72);letter-spacing:.06em;font-weight:400;
+}
+.cover-meta{
+  margin-top:clamp(46px,8vw,86px);
+  padding-top:24px;border-top:1px solid rgba(255,255,255,.18);
+  display:flex;justify-content:space-between;align-items:flex-end;
+  flex-wrap:wrap;gap:16px;
+  font-size:13px;color:rgba(255,255,255,.66);letter-spacing:.08em;
+}
+.cover-meta strong{
+  display:block;color:#fff;font-size:17px;font-weight:500;
+  letter-spacing:.12em;margin-bottom:5px;
+}
+
+/* ---------- chapter ---------- */
+.chap{margin-top:clamp(56px,8vw,96px)}
+.chap:first-of-type{margin-top:0}
+.chap-head{
+  display:flex;align-items:baseline;gap:18px;
+  padding-bottom:18px;margin-bottom:clamp(26px,4vw,40px);
+  border-bottom:1px solid var(--rule);
+}
+.chap-no{
+  font-family:var(--sans);
+  font-size:10.5px;letter-spacing:.32em;color:var(--kin-deep);
+  white-space:nowrap;font-weight:500;
+}
+.chap-head h2{
+  font-size:clamp(19px,2.8vw,26px);
+  font-weight:500;letter-spacing:.05em;line-height:1.55;
+}
+h3{
+  font-size:clamp(16px,2.1vw,19px);font-weight:500;
+  letter-spacing:.05em;margin:38px 0 14px;
+  padding-left:14px;border-left:3px solid var(--kin);
+  line-height:1.6;
+}
+p{margin-bottom:17px}
+p:last-child{margin-bottom:0}
+strong{font-weight:600}
+.em-line{
+  background:linear-gradient(transparent 62%,rgba(184,152,90,.3) 62%);
+  font-weight:600;
+}
+
+/* ---------- 引き込み ---------- */
+.pull{
+  background:var(--washi);
+  border-left:3px solid var(--sumi);
+  padding:clamp(24px,4vw,34px) clamp(22px,4vw,36px);
+  margin:32px 0;
+  font-size:clamp(16px,2.2vw,20px);
+  line-height:1.85;letter-spacing:.04em;font-weight:500;
+}
+.pull small{
+  display:block;font-family:var(--sans);font-size:12px;
+  color:var(--ink-pale);letter-spacing:.06em;margin-top:12px;
+  font-weight:400;line-height:1.9;
+}
+
+/* ---------- 事実リスト ---------- */
+.facts{list-style:none;counter-reset:f;margin:26px 0}
+.facts li{
+  counter-increment:f;
+  position:relative;padding:18px 0 18px 54px;
+  border-bottom:1px solid var(--rule);
+}
+.facts li::before{
+  content:counter(f,decimal-leading-zero);
+  position:absolute;left:0;top:19px;
+  font-family:var(--sans);font-size:12px;font-weight:500;
+  color:var(--kin-deep);letter-spacing:.1em;
+}
+.facts b{display:block;font-weight:600;margin-bottom:4px;letter-spacing:.03em}
+.facts span{font-size:13.5px;color:var(--ink-soft);line-height:1.9}
+
+/* ---------- 構造図 ---------- */
+.flow{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:10px;
+  margin:30px 0 10px;
+}
+.flow div{
+  background:var(--washi);border:1px solid var(--rule);
+  padding:18px 10px;text-align:center;font-size:13px;line-height:1.7;
+  position:relative;
+}
+.flow div small{display:block;font-family:var(--sans);font-size:10.5px;color:var(--ink-pale);margin-top:5px}
+.flow div.ota{background:#f3ece2;border-color:#e0d2bc}
+.flow-cap{font-family:var(--sans);font-size:12.5px;color:var(--ink-pale);text-align:center;letter-spacing:.06em}
+
+/* ---------- 3本柱 ---------- */
+.pillars{display:grid;gap:16px;margin:30px 0}
+.pillar{
+  display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;
+  border:1px solid var(--rule);padding:24px 26px;
+}
+.pillar-no{
+  font-family:var(--sans);font-size:11px;letter-spacing:.2em;
+  color:#fff;background:var(--sumi);padding:6px 11px;white-space:nowrap;
+}
+.pillar h4{font-size:17px;font-weight:600;letter-spacing:.04em;margin-bottom:8px}
+.pillar p{font-size:13.5px;color:var(--ink-soft);margin-bottom:0;line-height:1.95}
+
+/* ---------- table ---------- */
+table{border-collapse:collapse;width:100%;margin:26px 0;font-size:13.5px}
+th,td{border:1px solid var(--rule);padding:14px 16px;vertical-align:middle}
+thead th{
+  background:var(--sumi);color:#fff;font-weight:500;
+  letter-spacing:.08em;text-align:center;border-color:var(--sumi);
+}
+thead th.hl{background:var(--kin-deep);border-color:var(--kin-deep)}
+tbody th{background:var(--washi);text-align:left;font-weight:500;white-space:nowrap}
+td{text-align:center}
+td.l{text-align:left}
+td.hl{background:#fdfaf4;font-weight:600}
+.price{font-size:20px;font-weight:600;letter-spacing:.02em}
+.price small{font-size:12px;font-weight:400;margin-left:2px}
+.tbl-note{font-family:var(--sans);font-size:12px;color:var(--ink-pale);line-height:1.9;margin-top:-10px}
+
+/* ---------- ROI ---------- */
+.calc{background:var(--washi);padding:clamp(26px,4vw,38px);margin:30px 0}
+.calc-row{
+  display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+  padding:13px 0;border-bottom:1px dashed var(--rule);flex-wrap:wrap;
+}
+.calc-row:last-of-type{border-bottom:none}
+.calc-row span{font-size:13.5px;color:var(--ink-soft)}
+.calc-row b{font-size:16px;font-weight:600;white-space:nowrap}
+.calc-answer{
+  margin-top:22px;padding-top:22px;border-top:2px solid var(--sumi);
+  text-align:center;
+}
+.calc-answer p{font-size:13px;color:var(--ink-pale);margin-bottom:8px;font-family:var(--sans)}
+.calc-answer b{font-size:clamp(19px,3vw,25px);font-weight:600;letter-spacing:.03em;line-height:1.6}
+.calc-answer b em{font-style:normal;color:var(--kin-deep)}
+
+/* ---------- schedule ---------- */
+.sched{display:grid;grid-template-columns:104px 1fr;gap:0 20px;margin:26px 0}
+.sched dt{
+  font-family:var(--sans);font-size:12px;letter-spacing:.1em;
+  color:var(--kin-deep);font-weight:500;
+  padding:17px 0;border-bottom:1px solid var(--rule);
+}
+.sched dd{padding:17px 0;border-bottom:1px solid var(--rule)}
+.sched b{display:block;font-weight:600;margin-bottom:3px}
+.sched span{font-size:13px;color:var(--ink-soft);line-height:1.9}
+
+/* ---------- ask ---------- */
+.ask{counter-reset:a;list-style:none;margin:24px 0}
+.ask li{
+  counter-increment:a;position:relative;
+  padding:14px 0 14px 46px;border-bottom:1px solid var(--rule);
+  font-size:14px;
+}
+.ask li::before{
+  content:counter(a);
+  position:absolute;left:0;top:16px;
+  width:26px;height:26px;border:1px solid var(--kin);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--sans);font-size:11.5px;color:var(--kin-deep);
+}
+.ask small{display:block;font-family:var(--sans);font-size:12px;color:var(--ink-pale);margin-top:3px}
+
+/* ---------- profile ---------- */
+.profile{border:1px solid var(--rule);padding:clamp(26px,4vw,38px);margin-top:26px}
+.profile dl{display:grid;grid-template-columns:110px 1fr;gap:12px 20px;font-size:14px}
+.profile dt{font-family:var(--sans);font-size:12px;letter-spacing:.1em;color:var(--kin-deep);padding-top:4px}
+.profile dd{line-height:1.9}
+
+/* ---------- closing ---------- */
+.closing{
+  margin-top:clamp(56px,8vw,90px);
+  background:var(--sumi);color:#fff;
+  padding:clamp(38px,6vw,64px) clamp(26px,5vw,58px);
+  text-align:center;
+}
+.closing h2{font-size:clamp(18px,2.6vw,24px);font-weight:500;letter-spacing:.06em;margin-bottom:18px;line-height:1.7}
+.closing p{color:rgba(255,255,255,.72);font-size:14px;max-width:34em;margin:0 auto 10px}
+.closing .sign{
+  margin-top:32px;padding-top:24px;
+  border-top:1px solid rgba(255,255,255,.18);
+  font-size:13px;color:rgba(255,255,255,.6);letter-spacing:.08em;
+}
+.closing .sign strong{display:block;color:#fff;font-size:17px;letter-spacing:.14em;margin-top:6px}
+
+@media(max-width:680px){
+  .flow{grid-template-columns:1fr 1fr}
+  .pillar{grid-template-columns:1fr;gap:12px}
+  .pillar-no{justify-self:start}
+  .sched li{grid-template-columns:1fr;gap:4px}
+  .profile dl{grid-template-columns:1fr;gap:2px 0}
+  .profile dd{margin-bottom:12px}
+  table{font-size:12.5px}
+  th,td{padding:11px 10px}
+}
+
+@media print{
+  body{background:#fff;font-size:10.5pt;line-height:1.85}
+  .sheet{width:100%;padding:0 14mm}
+  .cover{padding:60mm 18mm 30mm;margin:0;min-height:269mm;break-after:page;display:flex;flex-direction:column;justify-content:center}
+  .chap{margin-top:14mm;break-inside:avoid}
+  .chap-head{break-after:avoid}
+  h3{break-after:avoid}
+  .pull,.calc,.pillar,.profile,table,.flow{break-inside:avoid}
+  .closing{margin:14mm -14mm 0;padding:18mm 14mm}
+  @page{size:A4;margin:14mm 0}
+}
+.qr-box{display:flex;align-items:center;gap:20px;margin:18px 0 26px;padding:16px 20px;border:1px solid #d9d4c7;background:#faf8f4;break-inside:avoid}
+.qr-box svg{width:110px;height:110px;flex:none}
+.qr-box b{display:block;font-size:14px;margin-bottom:4px}
+.qr-box span{display:block;font-size:13px;word-break:break-all;letter-spacing:.01em}
+.qr-box small{display:block;font-size:11px;color:#7d7a73;margin-top:4px}
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<div class="sheet cover">
+  <span class="cover-to">川棚温泉　小天狗さんろじ　御中</span>
+  <h1>公式予約を、<br><span>いちばん強い販売チャネル</span>に。</h1>
+  <p class="cover-sub">——すでにある直予約システムを、動かすためのご提案</p>
+  <div class="cover-meta">
+    <div>
+      <strong>桂</strong>
+      学校法人 マーケティングリーダー
+    </div>
+    <div class="num">2026年9月22日</div>
+  </div>
+</div>
+
+<div class="sheet">
+
+<!-- ============ 01 ============ -->
+<section class="chap">
+  <div class="chap-head">
+    <span class="chap-no">CHAPTER 01</span>
+    <h2>はじめに</h2>
+  </div>
+  <p>突然のご連絡を失礼いたします。学校法人でマーケティングリーダーを務めております、桂と申します。</p>
+  <p>下関市内および川棚温泉のご宿泊施設について、公式サイト・予約サイト・SNSの状況を一軒ずつ実際に開いて調べてまいりました。その中で、<span class="em-line">小天狗さんろじ様が最も「あと一歩」の状態にある</span>と感じ、この資料をお送りいたしました。</p>
+  <p>売り込みのためにお伺いしたのではありません。調べて分かった事実を、まずお伝えしたいと考えております。ご不要とご判断されましたら、この資料はそのままご放念ください。</p>
+</section>
+
+<!-- ============ 02 ============ -->
+<section class="chap">
+  <div class="chap-head">
+    <span class="chap-no">CHAPTER 02</span>
+    <h2>調べて分かったこと</h2>
+  </div>
+  <p>2026年9月17日時点で、貴館の公式サイトと各予約サイトを実際に確認いたしました。以下はすべて、そのとき実際に表示されていた内容です。</p>
+
+  <ul class="facts">
+    <li>
+      <b>公式サイトには、すでに直予約システムが入っている</b>
+      <span>公式サイトのご予約ボタンから、d-reserve の予約画面へ直接つながります。プランごとの個別ページ、会員ログイン、予約確認まで揃っています。新しく仕組みを入れる必要はありません。</span>
+    </li>
+    <li>
+      <b>その公式サイトに、「公式限定の特典」の記載が見当たらない</b>
+      <span>サイト全体を確認しましたが、ベストレート保証・公式限定特典・公式予約のおすすめといった表示はございませんでした。</span>
+    </li>
+    <li>
+      <b>一方、じゃらんの掲載ページには「最大4,000円のクーポン配布中」と出ている</b>
+      <span>同じお部屋、同じお料理です。それでも割引が付くのは予約サイト側だけという状態ですので、<strong>お客様にとっては予約サイトを選ぶほうが合理的</strong>になってしまっています。</span>
+    </li>
+    <li>
+      <b>公式サイトから公式LINEへの導線がない</b>
+      <span>一度ご宿泊されたお客様と、直接つながり続ける経路がございません。二度目のご予約も、また予約サイトを経由することになります。</span>
+    </li>
+    <li>
+      <b>Instagram（@kotengusanroji）はあるが、公式サイトからつながっていない</b>
+      <span>写真で伝わる価値が非常に大きい宿でありながら、その入り口が予約へ結びついていません。</span>
+    </li>
+  </ul>
+
+  <div class="pull">
+    つまり今は、お客様が公式サイトで予約する理由が、ひとつもない状態です。
+    <small>受け皿はすでにあります。足りていないのは「そこを選ぶ理由」だけです。</small>
+  </div>
+</section>
+
+<!-- ============ 03 ============ -->
+<section class="chap">
+  <div class="chap-head">
+    <span class="chap-no">CHAPTER 03</span>
+    <h2>課題の構造</h2>
+  </div>
+  <p>「直予約ができない」のではありません。<span class="em-line">「直予約する理由がない」</span>のです。この二つは、打つ手がまったく違います。</p>
+
+  <h3>いま起きていること</h3>
+  <div class="flow">
+    <div class="ota">知る<small>予約サイト</small></div>
+    <div class="ota">比べる<small>予約サイトが得</small></div>
+    <div class="ota">予約する<small>予約サイト</small></div>
+    <div class="ota">また泊まる<small>また予約サイト</small></div>
+  </div>
+  <p class="flow-cap">最初から最後まで、公式サイトが登場する場面がありません。</p>
+
+  <h3>これから起こすこと</h3>
+  <div class="flow">
+    <div>知る<small>Instagram・予約サイト</small></div>
+    <div>比べる<small>公式が最も得</small></div>
+    <div>予約する<small>公式サイト</small></div>
+    <div>また泊まる<small>LINEから直接</small></div>
+  </div>
+  <p class="flow-cap">予約サイトをやめる必要はありません。<strong>知っていただく窓口としては残したまま</strong>、最後のご予約と二度目以降を公式に寄せます。</p>
+
+  <div class="pull">
+    予約サイト経由のご予約が一割だけ公式に変わる。<br>それだけで、手数料として出ていた分が、そのまま利益に変わります。
+  </div>
+</section>
+
+<!-- ============ 04 ============ -->
+<section class="chap">
+  <div class="chap-head">
+    <span class="chap-no">CHAPTER 04</span>
+    <h2>ご提案の全体像</h2>
+  </div>
+  <p>やることは三つだけです。順番にも意味がございます。</p>
+
+  <div class="pillars">
+    <div class="pillar">
+      <span class="pillar-no">其の一</span>
+      <div>
+        <h4>公式で予約する理由をつくる</h4>
+        <p>公式限定の特典を設計し、それを伝える専用ページをご用意します。ベストレート保証・レイトチェックアウト・お飲み物一杯など、追加の人件費がほとんどかからず、お客様の満足度が上がるものから選びます。<strong>特典の中身は、貴館のご判断で決めていただきます。</strong></p>
+      </div>
+    </div>
+    <div class="pillar">
+      <span class="pillar-no">其の二</span>
+      <div>
+        <h4>公式へお客様を送る</h4>
+        <p>Instagramで宿の世界観を伝え、公式LINEへご登録いただき、そこから公式予約へご案内する流れをつくります。離れ・露天風呂・ふく料理という素材は、写真と動画で最も伝わるものです。</p>
+      </div>
+    </div>
+    <div class="pillar">
+      <span class="pillar-no">其の三</span>
+      <div>
+        <h4>二度目からは、直接つながる</h4>
+        <p>一度ご宿泊いただいたお客様へ、LINEで空室の先行ご案内や季節のプランをお届けします。リピーターのお客様のご予約に、手数料を払い続ける必要がなくなります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 ============ -->
+<section class="chap">
+  <div class="chap-head">
+    <span class="chap-no">CHAPTER 05</span>
+    <h2>すでにご用意したもの</h2>
+  </div>
+  <p>ご提案の言葉だけをお送りするのは失礼と考え、<strong>其の一にあたる「公式予約ページ」を、すでに形にしてご用意しました。</strong>下記のURL、またはQRコードから、スマートフォンやパソコンで実際にご覧いただけます。</p>
+  <div class="qr-box"><svg xmlns="http://www.w3.org/2000/svg" width="148" height="148" class="segno"><path transform="scale(4)" class="qrline" stroke="#000" d="M2 2.5h7m1 0h2m4 0h2m2 0h2m2 0h2m2 0h7m-33 1h1m5 0h1m2 0h1m2 0h3m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m2 0h2m1 0h2m1 0h1m2 0h1m2 0h2m3 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m4 0h1m1 0h1m1 0h1m2 0h2m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m3 0h2m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h2m2 0h3m2 0h1m2 0h1m3 0h1m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-23 1h4m1 0h1m2 0h4m1 0h2m-24 1h7m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m2 0h1m4 0h2m3 0h1m-31 1h2m5 0h1m4 0h1m1 0h5m2 0h1m2 0h2m1 0h2m1 0h1m-33 1h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m4 0h2m2 0h1m4 0h2m1 0h1m1 0h2m-32 1h1m1 0h3m2 0h1m1 0h1m1 0h1m2 0h2m1 0h3m1 0h1m1 0h4m1 0h3m-30 1h1m1 0h1m2 0h1m2 0h3m3 0h1m3 0h1m2 0h1m4 0h3m1 0h1m-30 1h1m4 0h4m1 0h3m1 0h4m1 0h1m1 0h1m2 0h1m4 0h2m-33 1h1m2 0h4m4 0h1m3 0h2m1 0h1m1 0h2m2 0h3m3 0h2m-31 1h1m1 0h1m3 0h1m2 0h4m1 0h4m2 0h3m1 0h6m-25 1h1m1 0h1m1 0h2m1 0h1m3 0h2m3 0h2m1 0h1m1 0h3m2 0h1m-33 1h1m2 0h2m3 0h1m2 0h6m1 0h3m2 0h1m2 0h2m1 0h4m-31 1h2m2 0h1m2 0h2m2 0h2m1 0h1m3 0h2m2 0h5m1 0h2m-29 1h1m9 0h1m2 0h1m1 0h1m1 0h3m2 0h7m-32 1h1m3 0h3m2 0h2m1 0h3m2 0h1m4 0h1m1 0h2m1 0h3m2 0h1m-33 1h1m1 0h1m2 0h1m2 0h5m1 0h4m1 0h2m1 0h2m1 0h2m2 0h2m1 0h1m-33 1h1m2 0h5m1 0h2m4 0h1m1 0h2m1 0h2m4 0h6m-32 1h1m1 0h4m1 0h1m5 0h1m1 0h1m1 0h2m1 0h2m2 0h3m1 0h3m-31 1h1m1 0h2m2 0h1m4 0h1m2 0h1m3 0h3m1 0h1m1 0h5m2 0h2m-25 1h1m1 0h2m1 0h4m2 0h3m1 0h2m3 0h1m1 0h1m1 0h1m-33 1h7m1 0h2m2 0h1m3 0h1m1 0h1m4 0h2m1 0h1m1 0h1m1 0h2m-32 1h1m5 0h1m1 0h2m1 0h3m4 0h2m1 0h4m3 0h5m-33 1h1m1 0h3m1 0h1m1 0h1m2 0h2m2 0h1m1 0h1m4 0h1m1 0h6m1 0h1m-32 1h1m1 0h3m1 0h1m1 0h3m2 0h1m3 0h5m1 0h3m2 0h1m1 0h1m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h4m3 0h2m1 0h2m2 0h1m1 0h2m-28 1h1m5 0h1m1 0h3m2 0h3m5 0h2m5 0h1m1 0h1m-31 1h7m2 0h1m2 0h2m1 0h1m4 0h1m1 0h6m3 0h1"/></svg><div><b>ご提案用 見本ページ</b><span>https://katsuraharuki.github.io/sanrojisama/</span><small>検索エンジンには表示されない設定にしております。</small></div></div>
+
+  <h3>このページの役割</h3>
+  <p>いまの公式サイトを作り替えるものではございません。<span class="em-line">既存のサイトに一枚だけ加える、予約の受け皿となるページ</span>です。お客様が「公式と予約サイト、どちらで取ろうか」と迷われた、その瞬間に読まれることを想定しています。</p>
+
+  <h3>ご確認いただきたい点</h3>
+  <ul class="facts">
+    <li>
+      <b>掲載している写真について</b>
+      <span>貴館の公式サイトに掲載されている写真を、ご提案のために一時的にお借りしております。ご不要とのご判断があれば、直ちに削除いたします。</span>
+    </li>
+    <li>
+      <b>特典の内容について</b>
+      <span>ページに記載した三つの特典は、あくまで一例です。実際の内容・原価・オペレーションを踏まえ、貴館と相談のうえ決定いたします。</span>
+    </li>
+    <li>
+      <b>予約ボタンのリンク先について</b>
+      <span>現在ご利用中の d-reserve の予約画面へ、そのままつながるようにしております。</span>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ 06 ============ -->
+<section class="chap">
+  <div class="chap-head">
+    <span class="chap-no">CHAPTER 06</span>
+    <h2>お見積り</h2>
+  </div>
+
+  <h3>初期費用</h3>
+  <table>
+    <thead>
+      <tr><th style="width:38%">項目</th><th>内容</th><th style="width:22%">金額</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>初期構築一式</th>
+        <td class="l">公式予約ページの制作／公式限定特典の設計／公式LINEの開設と予約導線の構築／Instagramの世界観設計（プロフィール・ハイライト・投稿の型）</td>
+        <td class="hl"><span class="price num">250,000</span><small>円</small></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="tbl-note">※お支払いは一括、または初月・翌月の二回に分けてのお支払いも承ります。</p>
+
+  <h3>月額運用費（二つのプランからお選びいただけます）</h3>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:34%">毎月の提供物</th>
+        <th style="width:33%">スタンダード</th>
+        <th class="hl" style="width:33%">プレミア</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><th>Instagram投稿</th><td>月8本</td><td class="hl">月8本</td></tr>
+      <tr><th>ショート動画（リール）</th><td>—</td><td class="hl">月2本</td></tr>
+      <tr><th>LINE配信</th><td>月2回</td><td class="hl">月2回</td></tr>
+      <tr><th>季節キャンペーン設計</th><td>—</td><td class="hl">閑散期対策を毎月</td></tr>
+      <tr><th>月次レポート</th><td>ご予約数・流入</td><td class="hl">＋手数料の削減額を毎月可視化</td></tr>
+      <tr>
+        <th>月額</th>
+        <td><span class="price num">120,000</span><small>円</small></td>
+        <td class="hl"><span class="price num">150,000</span><small>円</small></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="tbl-note">※価格はすべて税別です。<br>※契約期間は一年間を基本とさせていただいております。施策の効果が数字に表れるまでに、季節をひと通り越える必要があるためです。</p>
+
+  <p>一日八組・全室露天風呂付きという宿の性格を考えますと、<strong>閑散期の埋め方まで手が届くプレミアをおすすめしております。</strong></p>
+</section>
+
+<!-- ============ 07 ============ -->
+<section class="chap">
+  <div class="chap-head">
+    <span class="chap-no">CHAPTER 07</span>
+    <h2>費用ではなく、投資として</h2>
+  </div>
+  <p>この提案の費用は、新しく生まれる出費ではありません。<span class="em-line">いま予約サイトへ手数料としてお支払いになっている分の、行き先を変えるものです。</span></p>
+
+  <div class="calc">
+    <div class="calc-row"><span>さんろじ会席・二名一室でのご宿泊一泊（お一人様30,000円として試算）</span><b class="num">60,000円</b></div>
+    <div class="calc-row"><span>予約サイトの手数料（一般的な料率 10〜15％）</span><b class="num">6,000〜9,000円</b></div>
+    <div class="calc-row"><span>プレミアの月額</span><b class="num">150,000円</b></div>
+    <div class="calc-answer">
+      <p>月額を手数料の削減分だけでまかなうために必要な、公式予約への切り替え</p>
+      <b>ひと月あたり <em class="num">17件〜25件</em></b>
+    </div>
+  </div>
+
+  <p>全八室を三十日でご提供された場合、のべ240室泊。稼働率を六割と仮定しますと、ひと月およそ144組のお客様です。<span class="em-line">そのうちの一割強が公式予約に変わるだけで、手数料の削減分だけで月額をまかなえる計算</span>になります。</p>
+  <p>スタンダード（月額120,000円）の場合は、ひと月14件〜20件です。</p>
+  <p>そして<strong>二年目からは、初期費用がかかりません。</strong>一度つくった特典と導線は、翌年もそのまま働き続けます。</p>
+  <p class="tbl-note">※上記は公開情報からの試算です。実際のご予約数・各予約サイトの手数料率をうかがえておりませんので、正確な数字は次回お示しいたします。</p>
+</section>
+
+<!-- ============ 08 ============ -->
+<section class="chap">
+  <div class="chap-head">
+    <span class="chap-no">CHAPTER 08</span>
+    <h2>お引き受けしたあとの進め方</h2>
+  </div>
+  <dl class="sched">
+    <dt>1ヶ月目</dt>
+    <dd>
+      <b>特典を決め、公式予約ページを公開する</b>
+      <span>特典の内容を貴館と決定し、ご用意したページを仕上げて公開。公式LINEを開設し、予約導線をつなぎます。</span>
+    </dd>
+    <dt>2ヶ月目</dt>
+    <dd>
+      <b>Instagramを、予約につながる形に整える</b>
+      <span>プロフィール・ハイライト・投稿の型を設計し、運用を開始。公式LINEへの動線を敷きます。</span>
+    </dd>
+    <dt>3ヶ月目〜</dt>
+    <dd>
+      <b>毎月まわし、数字でご報告する</b>
+      <span>投稿・配信・キャンペーンを毎月実行。公式予約が何件入り、手数料がいくら減ったかを、毎月の数字でご報告いたします。</span>
+    </dd>
+    <dt>ご契約後も</dt>
+    <dd>
+      <b>ご連絡はLINEで、いつでも</b>
+      <span>ご相談・修正のご依頼は、LINEで直接お受けします。定例のご報告とは別に、気づいた点はその都度お伝えいたします。</span>
+    </dd>
+  </dl>
+</section>
+
+<!-- ============ 09 ============ -->
+<section class="chap">
+  <div class="chap-head">
+    <span class="chap-no">CHAPTER 09</span>
+    <h2>わたしについて</h2>
+  </div>
+  <div class="profile">
+    <dl>
+      <dt>氏名</dt>
+      <dd>桂</dd>
+      <dt>所属</dt>
+      <dd>学校法人にて、マーケティングリーダーを務めております</dd>
+      <dt>実績</dt>
+      <dd>担当する学校説明会において、<strong>前年度は年間180人だった参加者を、今年度は第1回・第2回だけで230人</strong>にいたしました。<br>Instagram・公式LINE・ショート動画を組み合わせた集客設計によるものです。</dd>
+      <dt>得意なこと</dt>
+      <dd>「すでにあるもの」を動かすことです。新しく作り替えるのではなく、いま持っていらっしゃる資産が働いていない理由を見つけて、そこだけを直します。</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 10 ============ -->
+<section class="chap">
+  <div class="chap-head">
+    <span class="chap-no">CHAPTER 10</span>
+    <h2>お伺いしたいこと</h2>
+  </div>
+  <p>次にお会いする際、より正確な数字をお示しするために、差し支えのない範囲で以下をうかがえますと幸いです。</p>
+  <ol class="ask">
+    <li>ひと月あたりのご予約数と、予約サイト経由の割合<small>費用対効果を、仮定ではなく実数で計算できます</small></li>
+    <li>各予約サイトの手数料率<small>サイトごとに異なるため、どこから切り替えるかの判断が変わります</small></li>
+    <li>リピーターのお客様のおおよその割合<small>LINEでどれだけ取り戻せるかの見込みが立ちます</small></li>
+    <li>Instagramを、現在どなたが運用されているか<small>お引き受けする範囲と、お任せいただく範囲を決めるためです</small></li>
+  </ol>
+</section>
+
+</div>
+
+<div class="closing">
+  <h2>受け皿は、すでにございます。</h2>
+  <p>新しい仕組みを入れる必要も、サイトを作り替える必要もありません。</p>
+  <p>足りていないのは、お客様が公式サイトを選ぶ理由だけです。<br>そこを、一緒につくらせていただけませんでしょうか。</p>
+  <div class="sign">
+    ご検討のほど、何卒よろしくお願い申し上げます。
+    <strong>桂</strong>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>公式サイトからのご予約が、いちばんおトクです｜川棚温泉 小天狗さんろじ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sumi:#1c1c1a;
+  --sumi-soft:#4a4844;
+  --sumi-pale:#7d7a73;
+  --midori:#35703f;
+  --midori-dark:#224d29;
+  --midori-pale:#eef3ee;
+  --kin:#a8874b;
+  --washi:#faf8f4;
+  --line-c:#e3ded4;
+  --serif:"Shippori Mincho B1",serif;
+  --sans:"Noto Sans JP",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  color:var(--sumi);
+  background:#fff;
+  line-height:1.9;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  font-size:15px;
+  padding-bottom:72px;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1080px,88vw);margin-inline:auto}
+.narrow{width:min(760px,88vw);margin-inline:auto}
+
+/* ---------- header ---------- */
+.site-head{
+  position:sticky;top:0;z-index:60;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line-c);
+}
+.site-head .inner{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 0;
+}
+.site-head .brand{
+  font-family:var(--serif);font-size:17px;
+  letter-spacing:.16em;line-height:1.4;
+}
+.site-head .brand small{
+  display:block;font-family:var(--sans);font-size:9.5px;
+  letter-spacing:.24em;color:var(--kin);margin-bottom:3px;
+}
+.head-tel{
+  font-family:var(--serif);
+  font-size:15px;letter-spacing:.06em;
+}
+.head-tel small{display:block;font-family:var(--sans);font-size:10px;color:var(--sumi-pale);letter-spacing:.14em}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;
+  min-height:clamp(520px,82vh,760px);
+  display:flex;align-items:flex-end;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:url("assets/sp_top_bg_img_intro.webp") center 60%/cover no-repeat;
+  transform:scale(1.02);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(18,22,18,.42) 0%,rgba(18,22,18,.15) 38%,rgba(14,18,14,.78) 100%);
+}
+.hero-in{position:relative;z-index:2;padding-bottom:clamp(40px,6vw,72px)}
+.hero-kicker{
+  display:inline-block;
+  font-family:var(--serif);
+  color:#fff;font-size:12px;letter-spacing:.34em;
+  border:1px solid rgba(255,255,255,.5);
+  padding:7px 16px 7px 20px;margin-bottom:24px;
+}
+.hero h1{
+  font-family:var(--serif);
+  color:#fff;font-weight:500;
+  font-size:clamp(28px,5.4vw,52px);
+  line-height:1.5;letter-spacing:.04em;
+  text-shadow:0 2px 24px rgba(0,0,0,.4);
+}
+.hero h1 em{font-style:normal;border-bottom:2px solid var(--kin);padding-bottom:4px}
+.hero p{
+  color:rgba(255,255,255,.9);
+  margin-top:20px;font-size:clamp(13px,1.6vw,16px);
+  letter-spacing:.06em;max-width:32em;
+}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--serif);font-size:15px;letter-spacing:.1em;
+  padding:16px 34px;border:1px solid transparent;
+  transition:.28s ease;white-space:nowrap;
+}
+.btn-main{background:var(--midori);color:#fff}
+.btn-main:hover{background:var(--midori-dark)}
+.btn-line{background:#06C755;color:#fff}
+.btn-line:hover{filter:brightness(.92)}
+.btn-ghost{border-color:rgba(255,255,255,.65);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.14)}
+.btn-outline{border-color:var(--midori);color:var(--midori)}
+.btn-outline:hover{background:var(--midori);color:#fff}
+
+/* ---------- section frame ---------- */
+section{padding:clamp(64px,9vw,112px) 0}
+.sec-label{
+  font-family:var(--serif);
+  font-size:11px;letter-spacing:.4em;color:var(--kin);
+  margin-bottom:14px;
+}
+.sec-title{
+  font-family:var(--serif);font-weight:500;
+  font-size:clamp(22px,3.4vw,34px);
+  line-height:1.6;letter-spacing:.06em;
+  margin-bottom:22px;
+}
+.sec-lead{color:var(--sumi-soft);font-size:15px;max-width:40em}
+.center{text-align:center}
+.center .sec-lead{margin-inline:auto}
+
+/* ---------- 特典 ---------- */
+.merit{background:var(--washi)}
+.merit-grid{
+  display:grid;gap:20px;margin-top:48px;
+  grid-template-columns:repeat(auto-fit,minmax(248px,1fr));
+}
+.merit-card{
+  background:#fff;padding:38px 30px 34px;
+  border-top:3px solid var(--midori);
+  text-align:center;
+  box-shadow:0 1px 18px rgba(28,28,26,.05);
+}
+.merit-num{
+  font-family:var(--serif);font-size:12px;letter-spacing:.3em;
+  color:var(--kin);margin-bottom:16px;
+}
+.merit-card h3{
+  font-family:var(--serif);font-weight:500;
+  font-size:19px;line-height:1.6;margin-bottom:14px;letter-spacing:.04em;
+}
+.merit-card p{font-size:13.5px;color:var(--sumi-soft);line-height:1.95}
+
+/* ---------- 比較表 ---------- */
+.compare{margin-top:56px;overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:560px;background:#fff}
+th,td{
+  border:1px solid var(--line-c);
+  padding:16px 18px;text-align:center;font-size:13.5px;vertical-align:middle;
+}
+thead th{
+  font-family:var(--serif);font-weight:500;font-size:15px;
+  letter-spacing:.08em;padding:18px;
+}
+thead th.own{background:var(--midori);color:#fff;border-color:var(--midori)}
+thead th.ota{background:#f2efe9;color:var(--sumi-soft)}
+tbody th{
+  background:var(--washi);text-align:left;font-weight:500;
+  font-family:var(--serif);font-size:14px;white-space:nowrap;
+}
+td.own{background:var(--midori-pale);font-weight:500;color:var(--midori-dark)}
+.mark{font-size:17px;color:var(--midori);margin-right:5px}
+.dash{color:var(--sumi-pale)}
+
+/* ---------- 宿の魅力 ---------- */
+.feature-row{
+  display:grid;gap:clamp(28px,4vw,60px);align-items:center;
+  grid-template-columns:1fr 1fr;
+}
+.feature-row + .feature-row{margin-top:clamp(56px,7vw,96px)}
+.feature-row.rev .ft-txt{order:2}
+.ft-txt h3{
+  font-family:var(--serif);font-weight:500;
+  font-size:clamp(19px,2.6vw,26px);line-height:1.65;
+  letter-spacing:.05em;margin-bottom:18px;
+}
+.ft-txt p{color:var(--sumi-soft);font-size:14.5px}
+.ft-note{
+  margin-top:20px;padding-top:18px;border-top:1px solid var(--line-c);
+  font-size:13px;color:var(--sumi-pale);letter-spacing:.04em;
+}
+.ft-img img{width:100%;object-fit:cover;aspect-ratio:16/10}
+
+/* ---------- 料理 ---------- */
+.cuisine{background:#14140f;color:#fff}
+.cuisine .sec-title{color:#fff}
+.cuisine .sec-lead{color:rgba(255,255,255,.72)}
+.cuisine-hero{margin:44px 0 0;position:relative}
+.cuisine-hero img{width:100%;aspect-ratio:21/9;object-fit:cover}
+.dish-grid{
+  display:grid;gap:18px;margin-top:22px;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+.dish img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.dish h4{
+  font-family:var(--serif);font-weight:400;font-size:15px;
+  margin-top:14px;letter-spacing:.08em;color:#fff;
+}
+.dish p{font-size:12.5px;color:rgba(255,255,255,.6);margin-top:5px}
+
+/* ---------- 客室 ---------- */
+.rooms{background:var(--washi)}
+.room-grid{
+  display:grid;gap:24px;margin-top:48px;
+  grid-template-columns:repeat(2,1fr);
+}
+.room-card{background:#fff;box-shadow:0 1px 16px rgba(28,28,26,.05)}
+.room-card img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.room-body{padding:20px 22px 24px}
+.room-body h4{font-family:var(--serif);font-size:18px;font-weight:500;letter-spacing:.1em}
+.room-meta{
+  display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;
+}
+.room-meta span{
+  font-size:11.5px;letter-spacing:.06em;color:var(--midori-dark);
+  background:var(--midori-pale);padding:4px 10px;
+}
+.room-all{
+  margin-top:28px;text-align:center;font-size:13.5px;color:var(--sumi-soft);
+}
+
+/* ---------- プラン ---------- */
+.plan-list{margin-top:44px;border-top:1px solid var(--line-c)}
+.plan-item{
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:22px 4px;border-bottom:1px solid var(--line-c);flex-wrap:wrap;
+}
+.plan-name{font-family:var(--serif);font-size:17px;letter-spacing:.05em}
+.plan-name small{
+  display:block;font-family:var(--sans);font-size:12px;
+  color:var(--sumi-pale);letter-spacing:.04em;margin-top:5px;
+}
+.plan-price{font-family:var(--serif);font-size:15px;color:var(--midori-dark);white-space:nowrap}
+.plan-price b{font-size:26px;font-weight:600;letter-spacing:.02em}
+.plan-note{margin-top:20px;font-size:12.5px;color:var(--sumi-pale);line-height:1.9}
+
+/* ---------- LINE ---------- */
+.line-sec{
+  background:linear-gradient(135deg,var(--midori-dark),var(--midori));
+  color:#fff;
+}
+.line-sec .sec-label{color:rgba(255,255,255,.75)}
+.line-sec .sec-title{color:#fff}
+.line-grid{
+  display:grid;gap:14px;margin:40px 0 36px;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+}
+.line-item{
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.2);
+  padding:22px 24px;
+}
+.line-item h4{font-family:var(--serif);font-size:16px;font-weight:500;margin-bottom:8px;letter-spacing:.05em}
+.line-item p{font-size:13px;color:rgba(255,255,255,.8);line-height:1.85}
+
+/* ---------- 予約 ---------- */
+.reserve{text-align:center}
+.reserve-box{
+  margin-top:44px;border:1px solid var(--line-c);
+  padding:clamp(34px,5vw,56px) clamp(22px,4vw,48px);
+  background:var(--washi);
+}
+.reserve-tel{
+  font-family:var(--serif);font-size:clamp(26px,4.4vw,38px);
+  letter-spacing:.06em;color:var(--midori-dark);margin:6px 0 4px;
+}
+.reserve-tel a{color:inherit}
+.reserve-hours{font-size:12.5px;color:var(--sumi-pale);letter-spacing:.06em}
+.reserve-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:30px}
+.divider-or{
+  display:flex;align-items:center;gap:16px;margin:34px 0;
+  color:var(--sumi-pale);font-size:11px;letter-spacing:.3em;
+}
+.divider-or::before,.divider-or::after{content:"";flex:1;height:1px;background:var(--line-c)}
+
+/* ---------- アクセス ---------- */
+.access-grid{
+  display:grid;gap:14px;margin-top:40px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+}
+.access-item{border-left:2px solid var(--midori);padding:4px 0 4px 20px}
+.access-item dt{
+  font-family:var(--serif);font-size:12px;letter-spacing:.2em;
+  color:var(--kin);margin-bottom:7px;
+}
+.access-item dd{font-size:14px;color:var(--sumi-soft);line-height:1.85}
+
+/* ---------- footer ---------- */
+footer{background:#14140f;color:rgba(255,255,255,.62);padding:56px 0 40px;font-size:13px}
+footer .f-name{
+  font-family:var(--serif);color:#fff;font-size:19px;
+  letter-spacing:.12em;margin-bottom:14px;
+}
+.f-meta{line-height:2}
+.f-note{
+  margin-top:30px;padding-top:20px;
+  border-top:1px solid rgba(255,255,255,.14);
+  font-size:11px;color:rgba(255,255,255,.4);line-height:1.9;
+}
+
+/* ---------- sticky bar ---------- */
+.sticky-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:80;
+  display:grid;grid-template-columns:1fr 1fr 1.2fr;
+  background:#fff;border-top:1px solid var(--line-c);
+  box-shadow:0 -2px 18px rgba(0,0,0,.08);
+}
+.sticky-bar a{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;padding:12px 6px;font-size:12px;letter-spacing:.06em;
+  font-family:var(--serif);transition:.2s;
+}
+.sticky-bar a small{font-family:var(--sans);font-size:9.5px;letter-spacing:.1em;opacity:.7}
+.sb-tel{color:var(--sumi)}
+.sb-line{background:#06C755;color:#fff}
+.sb-book{background:var(--midori);color:#fff}
+.sticky-bar a:hover{filter:brightness(.95)}
+
+@media(max-width:760px){
+  .hero h1{font-size:25px;line-height:1.6}
+  .hero-kicker{font-size:10px;letter-spacing:.18em;padding:6px 12px 6px 14px;margin-bottom:18px}
+  .room-grid{grid-template-columns:1fr}
+  .feature-row{grid-template-columns:1fr}
+  .feature-row.rev .ft-txt{order:0}
+  .hero-cta .btn{flex:1 1 100%}
+  th,td{padding:13px 12px;font-size:12.5px}
+  .plan-item{flex-direction:column;align-items:flex-start;gap:8px}
+}
+.proposal-note{background:#1c1c1a;color:#e8e4da;font-size:12px;line-height:1.6;text-align:center;padding:7px 16px;letter-spacing:.02em}
+</style>
+</head>
+<body>
+<div class="proposal-note">このページは、小天狗さんろじ様へのご提案用に作成した見本です（非公式・特典内容は仮のものです）。</div>
+
+<header class="site-head">
+  <div class="wrap inner">
+    <p class="brand"><small>KAWATANA ONSEN</small>小天狗さんろじ</p>
+    <div class="head-tel">
+      <small>ご予約・お問い合わせ</small>
+      <a href="tel:0837720227">083-772-0227</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<div class="hero">
+  <div class="hero-in wrap">
+    <span class="hero-kicker">川棚温泉・全室源泉かけ流し露天風呂付き</span>
+    <h1>公式サイトからのご予約が、<br><em>いちばんおトク</em>です。</h1>
+    <p>一日八組だけの離れ。<br>同じお部屋、同じお料理なら、特典のぶんだけ公式サイトがお得です。</p>
+    <div class="hero-cta">
+      <a class="btn btn-main" href="#reserve">公式サイトで空室を見る</a>
+      <a class="btn btn-ghost" href="#merit">公式限定の特典を見る</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 特典 ============ -->
+<section class="merit" id="merit">
+  <div class="wrap center">
+    <p class="sec-label">O F F I C I A L　B E N E F I T S</p>
+    <h2 class="sec-title">公式サイト予約だけの、三つの特典</h2>
+    <p class="sec-lead">予約サイトを通さない分を、そのままお客様にお返しします。<br>ご予約の前に、どうぞ見比べてください。</p>
+
+    <div class="merit-grid">
+      <div class="merit-card">
+        <p class="merit-num">其の一</p>
+        <h3>ベストレート保証</h3>
+        <p>当館の公式サイトが、常に最もお安い料金です。他の予約サイトで当館より安い料金を見つけられた場合は、その料金でご宿泊いただけます。</p>
+      </div>
+      <div class="merit-card">
+        <p class="merit-num">其の二</p>
+        <h3>レイトチェックアウト<br>十二時まで</h3>
+        <p>通常十一時のご出発を、一時間延長。朝の離れと露天風呂を、最後までゆっくりお過ごしいただけます。</p>
+      </div>
+      <div class="merit-card">
+        <p class="merit-num">其の三</p>
+        <h3>お飲み物を一杯</h3>
+        <p>地酒、または季節のカクテルを一杯お付けします。夕食のお供に、湯上がりの一杯に。</p>
+      </div>
+    </div>
+
+    <div class="compare">
+      <table>
+        <thead>
+          <tr>
+            <th style="background:#fff;border-color:var(--line-c)"></th>
+            <th class="own">公式サイト</th>
+            <th class="ota">各予約サイト</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>ご宿泊料金</th>
+            <td class="own"><span class="mark">◎</span>最安（ベストレート保証）</td>
+            <td>サイトごとに異なります</td>
+          </tr>
+          <tr>
+            <th>公式限定の特典</th>
+            <td class="own"><span class="mark">◎</span>三つの特典つき</td>
+            <td><span class="dash">—</span></td>
+          </tr>
+          <tr>
+            <th>記念日のご相談</th>
+            <td class="own"><span class="mark">◎</span>LINEで直接承ります</td>
+            <td>備考欄でのご連絡</td>
+          </tr>
+          <tr>
+            <th>空室のご案内</th>
+            <td class="own"><span class="mark">◎</span>LINEで先行ご案内</td>
+            <td>一般公開のみ</td>
+          </tr>
+          <tr>
+            <th>お食事・アレルギー</th>
+            <td class="own"><span class="mark">◎</span>事前に個別対応</td>
+            <td>備考欄でのご連絡</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 宿の魅力 ============ -->
+<section>
+  <div class="wrap">
+    <div class="center" style="margin-bottom:clamp(44px,6vw,72px)">
+      <p class="sec-label">S A N R O J I</p>
+      <h2 class="sec-title">一日八組だけの、離れ</h2>
+      <p class="sec-lead">創業八十年の旅館小天狗が、平成二十年に開いた離れの宿。<br>八棟それぞれが独立した一軒の家で、すべてに源泉かけ流しの露天風呂がございます。</p>
+    </div>
+
+    <div class="feature-row">
+      <div class="ft-txt">
+        <h3>誰にも気兼ねのいらない、<br>源泉かけ流しの露天風呂</h3>
+        <p>お部屋ごとに専用の露天風呂。川棚温泉の湯が、二十四時間かけ流しで満ちています。時間を気にせず、何度でも。深夜でも、朝いちばんでも、貸切のままです。</p>
+        <p class="ft-note">全八室・全室露天風呂付き／源泉かけ流し</p>
+      </div>
+      <div class="ft-img"><img src="assets/slide2_imgA_3.webp" alt="源泉かけ流しの露天風呂"></div>
+    </div>
+
+    <div class="feature-row rev">
+      <div class="ft-txt">
+        <h3>石畳の小径を抜けた先に、<br>あなただけの一棟</h3>
+        <p>竹と木々に囲まれた小径が、それぞれの離れへと続きます。館内を歩く人と行き交うこともありません。門をくぐった瞬間から、そこはもうお二人だけの場所です。</p>
+        <p class="ft-note">メゾネットタイプ／平屋タイプ　定員二名・四名</p>
+      </div>
+      <div class="ft-img"><img src="assets/sp_top_bg_img_intro.webp" alt="離れへ続く石畳の小径"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 料理 ============ -->
+<section class="cuisine">
+  <div class="wrap center">
+    <p class="sec-label">C U I S I N E</p>
+    <h2 class="sec-title">下関のふく、川棚の瓦そば</h2>
+    <p class="sec-lead">地元の海の幸と山の幸を、個室のお食事処で。<br>九月から四月は、下関とらふくの会席をご用意しております。</p>
+  </div>
+  <div class="wrap">
+    <div class="cuisine-hero"><img src="assets/food_center.webp" alt="下関とらふくの刺身"></div>
+    <div class="dish-grid">
+      <div class="dish">
+        <img src="assets/slide2_imgA_6.webp" alt="和朝食">
+        <h4>和朝食</h4>
+        <p>小鉢の料理と、ほかほかの蒸し野菜を添えて</p>
+      </div>
+      <div class="dish">
+        <img src="assets/slide2_imgA_1.webp" alt="お茶菓子">
+        <h4>お茶菓子</h4>
+        <p>お部屋にご用意しております</p>
+      </div>
+      <div class="dish">
+        <img src="assets/slide2_imgA_5.webp" alt="季節のカクテル">
+        <h4>お飲み物</h4>
+        <p>地酒、季節のカクテルを取り揃えて</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 客室 ============ -->
+<section class="rooms">
+  <div class="wrap">
+    <div class="center">
+      <p class="sec-label">R O O M S</p>
+      <h2 class="sec-title">八つの離れ、八つの過ごし方</h2>
+      <p class="sec-lead">壱之庄から八之庄まで、間取りも設えもそれぞれ異なります。</p>
+    </div>
+
+    <div class="room-grid">
+      <div class="room-card">
+        <img src="assets/slide1_imgA_1.webp" alt="壱之庄">
+        <div class="room-body">
+          <h4>壱之庄</h4>
+          <div class="room-meta"><span>メゾネット</span><span>ツインベッド</span><span>定員2名</span></div>
+        </div>
+      </div>
+      <div class="room-card">
+        <img src="assets/slide1_imgA_2.webp" alt="弐之庄">
+        <div class="room-body">
+          <h4>弐之庄</h4>
+          <div class="room-meta"><span>メゾネット</span><span>ダブルベッド</span><span>定員2名</span></div>
+        </div>
+      </div>
+      <div class="room-card">
+        <img src="assets/slide1_imgA_3.webp" alt="参之庄">
+        <div class="room-body">
+          <h4>参之庄</h4>
+          <div class="room-meta"><span>平屋</span><span>ツインベッド</span><span>定員4名</span></div>
+        </div>
+      </div>
+      <div class="room-card">
+        <img src="assets/slide1_imgA_5.webp" alt="伍之庄">
+        <div class="room-body">
+          <h4>伍之庄</h4>
+          <div class="room-meta"><span>平屋</span><span>ツインベッド</span><span>定員4名</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="room-all">このほか、肆之庄・陸之庄・漆之庄・捌之庄をご用意しております。<br>定員二名のお部屋が四室、定員四名のお部屋が四室、全八室すべてが露天風呂付きの離れです。</p>
+  </div>
+</section>
+
+<!-- ============ プラン ============ -->
+<section>
+  <div class="narrow">
+    <div class="center">
+      <p class="sec-label">P L A N S</p>
+      <h2 class="sec-title">ご宿泊プラン</h2>
+    </div>
+    <div class="plan-list">
+      <div class="plan-item">
+        <div class="plan-name">さんろじ会席<small>地元の海の幸・山の幸を使った基本の会席</small></div>
+        <div class="plan-price"><b>30,000</b> 円〜</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">さんろじプレミア会席<small>食材をさらに吟味した上位の会席</small></div>
+        <div class="plan-price"><b>33,000</b> 円〜</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">下関とらふく会席<small>九月〜四月の期間限定　ふく刺し・ふくちり</small></div>
+        <div class="plan-price"><b>31,000</b> 円〜</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">下関とらふくフルコース<small>九月〜四月の期間限定　とらふくを心ゆくまで</small></div>
+        <div class="plan-price"><b>34,000</b> 円〜</div>
+      </div>
+      <div class="plan-item">
+        <div class="plan-name">記念日プラン<small>誕生日・結婚記念日に　ご相談承ります</small></div>
+        <div class="plan-price"><b>33,000</b> 円〜</div>
+      </div>
+    </div>
+    <p class="plan-note">※表示はいずれも「二食付き／二名一室」の税込・最低料金です。<br>※ご宿泊日・お部屋タイプにより料金は変動いたします。詳しくは公式予約ページでご確認ください。</p>
+  </div>
+</section>
+
+<!-- ============ LINE ============ -->
+<section class="line-sec">
+  <div class="wrap center">
+    <p class="sec-label">L I N E</p>
+    <h2 class="sec-title">LINEで、直接ご相談ください</h2>
+    <p class="sec-lead">お電話がつながりにくい時間でも、LINEなら空いた時間にやりとりできます。</p>
+    <div class="line-grid">
+      <div class="line-item">
+        <h4>空室の先行ご案内</h4>
+        <p>予約サイトに出る前の空室を、友だち登録の方へ先にお知らせします。</p>
+      </div>
+      <div class="line-item">
+        <h4>公式限定プラン</h4>
+        <p>LINEの方だけにご案内する、季節のプランをお届けします。</p>
+      </div>
+      <div class="line-item">
+        <h4>記念日のご相談</h4>
+        <p>お祝いの内容やお食事のご希望を、事前に直接うかがいます。</p>
+      </div>
+      <div class="line-item">
+        <h4>次回のご予約</h4>
+        <p>二度目からは、メッセージ一本でご予約を承ります。</p>
+      </div>
+    </div>
+    <a class="btn btn-line" href="#reserve">LINEで友だち追加する</a>
+  </div>
+</section>
+
+<!-- ============ 予約 ============ -->
+<section class="reserve" id="reserve">
+  <div class="narrow">
+    <p class="sec-label">R E S E R V A T I O N</p>
+    <h2 class="sec-title">ご予約</h2>
+    <div class="reserve-box">
+      <p style="font-size:13px;letter-spacing:.14em;color:var(--sumi-pale)">お電話でのご予約</p>
+      <p class="reserve-tel"><a href="tel:0837720227">083-772-0227</a></p>
+      <p class="reserve-hours">受付時間　9:00 - 20:00</p>
+
+      <div class="divider-or">O R</div>
+
+      <p style="font-size:13px;letter-spacing:.14em;color:var(--sumi-pale);margin-bottom:6px">インターネットでのご予約</p>
+      <p style="font-size:14px;color:var(--sumi-soft)">空室状況の確認と、そのままのご予約ができます。</p>
+      <div class="reserve-btns">
+        <a class="btn btn-main" href="https://d-reserve.jp/GSEA001F01300/GSEA001A01?hotelCode=0000003265" target="_blank" rel="noopener">空室を確認して予約する</a>
+        <a class="btn btn-outline" href="#merit">特典をもう一度見る</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ アクセス ============ -->
+<section style="background:var(--washi)">
+  <div class="wrap">
+    <div class="center">
+      <p class="sec-label">A C C E S S</p>
+      <h2 class="sec-title">アクセス・ご案内</h2>
+    </div>
+    <div class="access-grid">
+      <dl class="access-item">
+        <dt>所在地</dt>
+        <dd>〒759-6301<br>山口県下関市豊浦町大字川棚5153</dd>
+      </dl>
+      <dl class="access-item">
+        <dt>お車でお越しの方</dt>
+        <dd>中国自動車道 下関ICより<br>およそ30分</dd>
+      </dl>
+      <dl class="access-item">
+        <dt>チェックイン</dt>
+        <dd>15:00（最終 18:00）</dd>
+      </dl>
+      <dl class="access-item">
+        <dt>チェックアウト</dt>
+        <dd>11:00<br><span style="color:var(--midori);font-weight:500">※公式予約は12:00まで延長</span></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo.webp" alt="小天狗さんろじ" style="width:148px;margin-bottom:22px">
+    <p class="f-name">川棚温泉　小天狗さんろじ</p>
+    <div class="f-meta">
+      〒759-6301　山口県下関市豊浦町大字川棚5153<br>
+      TEL 083-772-0227　／　チェックイン 15:00・チェックアウト 11:00
+    </div>
+    <p class="f-note">
+      本ページは、小天狗さんろじ様へのご提案のために作成した見本ページです。<br>
+      掲載写真は同館の公式サイトより一時的にお借りしています。ご不要とのご判断があれば直ちに削除いたします。
+    </p>
+  </div>
+</footer>
+
+<nav class="sticky-bar">
+  <a class="sb-tel" href="tel:0837720227"><small>TEL</small>083-772-0227</a>
+  <a class="sb-line" href="#reserve"><small>LINE</small>友だち追加</a>
+  <a class="sb-book" href="https://d-reserve.jp/GSEA001F01300/GSEA001A01?hotelCode=0000003265" target="_blank" rel="noopener"><small>OFFICIAL</small>空室を見る</a>
+</nav>
+
+</body>
+</html>
